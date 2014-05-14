@@ -1,13 +1,13 @@
 package $package$
 
-import _root_.android.app.Activity
-import _root_.android.os.Bundle
+import android.app.Activity
+import android.os.Bundle
 
-class $main_activity$ extends Activity with TypedActivity {
-  override def onCreate(bundle: Bundle) {
-    super.onCreate(bundle)
-    setContentView(R.layout.main)
+class $main_activity$ extends Activity {
 
-    findView(TR.textview).setText("hello, world!")
-  }
+    /** Called when the activity is first created. */
+    override def onCreate(Bundle savedInstanceState): Unit = {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.main)
+    }
 }
